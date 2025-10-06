@@ -29,11 +29,18 @@ namespace Library
             Console.WriteLine($"Book Author: {book.Author}");
             Console.WriteLine($"Book ISBN: {book.ISBN}");
 
+            // Output the book2 information to the console
+            Book mybook2 = new Book();
+            mybook2.Title = "C# Methods and classes";
+            mybook2.Author = "Microsoft";
+            mybook2.ISBN = "345678";
 
-            //add another book
-            //c# methods 
-            //microsoft
-            //345678
+            // Output the book information to the console
+            Console.WriteLine($"Book title: {mybook2.Title}");
+            Console.WriteLine($"Book Author: {mybook2.Author}");
+            Console.WriteLine($"Book ISBN: {mybook2.ISBN}");
+
+
         }
     }
 }

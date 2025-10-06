@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library
+namespace week3Library
 {
-     internal class Book
+    internal class Book
     {
         string Title;
         string Author;
@@ -16,32 +16,35 @@ namespace Library
         {
             // Create a new instance (object) of the Book class
             // Note how the object name differs from the class name
-            Book book = new Book();
+            Book Mybook = new Book();
 
             // This information is for one book in our library
-            Book mybook = new Book();
-            mybook.Title = "C# for beginners";
-            mybook.Author = "BillGates";
-            mybook.ISBN = "1234";
+            Mybook.Title = "C# for beginners";
+            Mybook.Author = "BillGates";
+            Mybook.ISBN = "12345678";
 
             // Output the book information to the console
-            Console.WriteLine($"Book title: {book.Title}");
-            Console.WriteLine($"Book Author: {book.Author}");
-            Console.WriteLine($"Book ISBN: {book.ISBN}");
+            Console.WriteLine($"Book title: {Mybook.Title}");
+            Console.WriteLine($"Book Author: {Mybook.Author}");
+            Console.WriteLine($"Book ISBN: {Mybook.ISBN}");
 
-            // Output the book2 information to the console
-            Book mybook2 = new Book();
-            mybook2.Title = "C# Methods and classes";
-            mybook2.Author = "Microsoft";
-            mybook2.ISBN = "345678";
 
-            // Output the book information to the console
-            Console.WriteLine($"Book title: {mybook2.Title}");
-            Console.WriteLine($"Book Author: {mybook2.Author}");
-            Console.WriteLine($"Book ISBN: {mybook2.ISBN}");
+            // Book object 2
+            Book Mybook2 = new Book();
+            Mybook2.Title = "C# Methods";
+            Mybook2.Author = "Microsoft";
+            Mybook2.ISBN = "3456778";
+
+
+            //Output for object 2
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine($"Book title: {Mybook2.Title}");
+            Console.WriteLine($"Book Author {Mybook2.Author}");
+            Console.WriteLine($"Book ISBN: {Mybook2.ISBN}");
 
 
         }
+
     }
 }
     
